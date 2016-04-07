@@ -15,11 +15,8 @@
 
 <script type="text/javascript">
 function callrest(){
-	document.getElementById("js").innerHTML = "Calling pure.jsp";
-	
-	$.get("pure.jsp?jql=project = %22Imaging Enterprise Scan%22 AND type = Bug AND fixVersion = Aljechin_main", {}, function(data){
-		//alert(data);
-		document.getElementById("js").innerHTML = data;
+	$.get("jsp\loginValidate.jsp", {}, function(data){
+		alert(data);
 	});
 	
 }
